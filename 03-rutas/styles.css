@@ -33,7 +33,7 @@ main {
     min-height: 100vh;
 }
 
-.articulo {
+.articulo, .formulario {
     max-width: 700px;
     margin: 0 auto;
 }
@@ -92,6 +92,14 @@ h1 {
     margin-left: 20px;
     cursor: pointer;
   }
+  .logo-navegación a {
+    color: white;
+    text-decoration: none;
+  }
+  .link-navegación a {
+    color: white;
+    text-align: none  ;
+  }
   .link-button {
     background-color: #fff;
     padding: 8px 15px;
@@ -115,3 +123,50 @@ h1 {
     background-color: red;
   }
 
+  .formulario {
+    height: calc(100vh - 60px);
+    display: flex;
+    align-items: center;
+  }
+
+.formulario form {
+  border: 2px solid white;
+  padding: 40px;
+  border-radius: 20px;
+  width: 100%;
+}
+
+.form-control input, textarea {
+  width: 100%;
+  border: none;
+  outline: none;
+  padding: 5px 15px;
+  margin-bottom: 15px;
+  border-radius: 8px;
+}
+
+.form-control input {
+  height: 30px;
+}
+
+.form-control label {
+  margin-bottom: 6px;
+}
+
+.form-botones button {
+  display: block;
+  border: none;
+  outline: none;
+  color: #20252c;
+  background-color: white;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-weight: 600;
+  margin-left: auto;
+  cursor: pointer;
+}
+
+.form-botones button:hover {
+  background-color: rgb(12, 151, 226);
+  color: white;
+}
